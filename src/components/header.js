@@ -15,29 +15,31 @@ const Header = ({ siteTitle }) => (
         position: `relative`,
       }}
     >
-      <div className="box" style={{backgroundColor: `#BDBDBD`}}>
-        <img className="profileimg" src={profile} alt="Erica and Cheong-ah"/>
+      <div className="headercontent">
+        <div className="box" style={{backgroundColor: `#BDBDBD`}}>
+          <img className="profileimg" src={profile} alt="Erica and Cheong-ah"/>
+        </div>
+        <div className="mainheader">
+          <h1 style={{margin: `1rem 0 0 0`}}>
+            <Link
+              to="/"
+              style={{
+                color: `#0f1a77`,
+                textDecoration: `none`,
+              }}
+            >
+              {siteTitle}
+            </Link>
+          </h1>
+          <h3 style={{margin: `0`}}>Software engineer</h3>
+        </div>
+        <ul className="navlink">
+          <ListLink to="/">About me</ListLink>
+          <ListLink to="/resume/">Resume</ListLink>
+          <ListLink to="/blog/">Blog</ListLink>
+          <ListLink to="/contact/">Contact</ListLink>
+        </ul>
       </div>
-      <div className="mainheader">
-        <h1 style={{margin: `1rem 0 0 0`}}>
-          <Link
-            to="/"
-            style={{
-              color: `#0f1a77`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
-        <h3 style={{margin: `0`}}>Software engineer</h3>
-      </div>
-      <ul className="navlink">
-        <ListLink to="/">About me</ListLink>
-        <ListLink to="/resume/">Resume</ListLink>
-        <ListLink to="/blog/">Blog</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
-      </ul>
     </div>
   </header>
 )
