@@ -51,3 +51,23 @@ header {
     bottom: 1rem;
     right: 1rem;
 }
+@media screen and (max-width: 365px) {
+    h1 {
+        font-size: 28px !important;
+    }
+    h2 {
+        font-size: 23px !important;
+    }
+    h3 {
+        font-size: 18px !important;
+    }
+
+    .box .profileimg {
+        display: none;
+    }
+    .navlink {
+        position: absolute;
+        bottom: 1rem;
+        right: 0;
+    }
+}
